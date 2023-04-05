@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import './login.css'
 import firebase from '../firebase';
 import React, { useState, useEffect } from 'react';
+import logo from '../assests/logo.png'
 
 function Login() {
     useEffect(() => {
@@ -47,8 +48,8 @@ function Login() {
         <div className='main'>
             
             <div className='left'>
-                <img className="logo" src='https://t3.ftcdn.net/jpg/04/63/05/30/360_F_463053093_eBZ5DvW11BRcXFagxEsljv4NJJdYl8xd.jpg' alt='logo'/>
-                <span className='tesla'>Tesla</span>
+                <img className="logo" src={logo} alt='logo'/>
+                {/* <span className='tesla'>Tesla</span> */}
                 <img src='https://tesla-cdn.thron.com/delivery/public/image/tesla/649c549e-12b4-40c6-9294-7e996b8d3ccb/bvlatuR/std/4096x3071/Model-S-Specs-Hero-Desktop-LHD' alt='' />
             </div>
             <div className='right'>
